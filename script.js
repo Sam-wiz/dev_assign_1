@@ -68,9 +68,6 @@ choiceElements.forEach((choice) => {
       if (classToApply === 'correct') {
         incrementScore();
       }
-      choiceElements.forEach(choice => choice.parentElement.classList.remove('correct', 'incorrect'));
-  
-      selectedChoice.parentElement.classList.add(classToApply);
   
       if (availableQuestions.length === 0) {
         window.location.href = 'lastpage.html?score=' + score;
